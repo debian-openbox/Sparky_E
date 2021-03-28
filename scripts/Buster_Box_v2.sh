@@ -9,8 +9,8 @@ mkdir ~/.scripts
 sudo chmod -R 755 ~/.scripts
 
 sudo chown -R $(logname):$(logname) /home/$(logname)/
-find ~/Buster_Box_v2 -type d -exec chmod 755 {} \;
-find ~/Buster_Box_v2 -type f -exec chmod 755 {} \;
+find ~/Bullseye_Box -type d -exec chmod 755 {} \;
+find ~/Bullseye_Box -type f -exec chmod 755 {} \;
 
 #sudo apt-get install -y software-properties-common && sudo apt-add-repository contrib && sudo apt-add-repository non-free
 
@@ -24,15 +24,15 @@ sudo apt-get install -y micro firmware-linux firmware-linux-nonfree firmware-mis
 
 sudo apt-get install -y rxvt-unicode mousepad apt-rdepends compton compton-conf firefox-esr xsel mirage pulseaudio numlockx pavucontrol mlocate vlc arandr apt-file synaptic doublecmd-common xutils mesa-utils xarchiver htop sysstat acpi hardinfo hddtemp wicd xfburn gnome-disk-utility python3-pip  fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder ranger geany gdebi fbxkb mpv curl gmrun xscreensaver galternatives pnmixer sxiv scrot xsettingsd git wmctrl pm-utils terminator arc-theme numix-icon-theme nitrogen policykit-1-gnome udiskie
 
-cp -Rp ~/Buster_Box_v2/.config ~/
+cp -Rp ~/Bullseye_Box/.config ~/
 
-cp -p ~/Buster_Box_v2/.Xresources ~/
+cp -p ~/Bullseye_Box/.Xresources ~/
 
-cp -p ~/Buster_Box_v2/keyboard.sh ~/
+cp -p ~/Bullseye_Box/keyboard.sh ~/
 
-sudo cp -p ~/Buster_Box_v2/rs.png /usr/share/fbxkb/images/rs.png
+sudo cp -p ~/Bullseye_Box/rs.png /usr/share/fbxkb/images/rs.png
 
-sudo cp ~/Buster_Box_v2/ncmpcpp_48x48.png /usr/share/icons
+sudo cp ~/Bullseye_Box/ncmpcpp_48x48.png /usr/share/icons
 
 #sudo chmod 777 /usr/share/icons/ncmpcpp_48x48.png
 
@@ -50,37 +50,37 @@ sudo cp ~/Buster_Box_v2/ncmpcpp_48x48.png /usr/share/icons
 #sudo chmod 777 ~/keyboard.sh
 
 ## debinfo -- prikaz resursa pri otvaranju terminala
-sudo cp ~/Buster_Box_v2/scripts/debinfo /usr/bin
+sudo cp ~/Bullseye_Box/scripts/debinfo /usr/bin
 sudo chmod 777 /usr/bin/debinfo
 echo debinfo >> ~/.bashrc
 
 ## instalacija comptona
-cp ~/Buster_Box_v2/scripts/install_compton.sh ~/.scripts
+cp ~/Bullseye_Box/scripts/install_compton.sh ~/.scripts
 mkdir ~/bin
-cp ~/Buster_Box_v2/start-compton.sh ~/bin
+cp ~/Bullseye_Box/start-compton.sh ~/bin
 sudo chmod -R 755 ~/bin
 
 ## instalacija ncmpcpp
-cp -Rp ~/Buster_Box_v2/.ncmpcpp ~/
-cp -Rp ~/Buster_Box_v2/.mpd ~/
+cp -Rp ~/Bullseye_Box/.ncmpcpp ~/
+cp -Rp ~/Bullseye_Box/.mpd ~/
 echo "Exec=x-terminal-emulator -T 'ncmpcpp' -e ncmpcpp" > /tmp/ncmpcpp_replacement
 sudo sed -i "s/^.*Exec=ncmpcpp.*$/$(cat /tmp/ncmpcpp_replacement)/" /usr/share/applications/ncmpcpp.desktop
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ncmpcpp.desktop
 echo "Icon=/usr/share/icons/ncmpcpp_48x48.png" >> /usr/share/applications/ncmpcpp.desktop
 
 ## screeny
-cp -p ~/Buster_Box_v2/scripts/screeny ~/.scripts
+cp -p ~/Bullseye_Box/scripts/screeny ~/.scripts
 
 ## script for reinstall youtube-dl
-cp -p ~/Buster_Box_v2/scripts/reinstall_youtube-dl.sh ~/.scripts
+cp -p ~/Bullseye_Box/scripts/reinstall_youtube-dl.sh ~/.scripts
 
 ## Geany theme settings
-cp -p ~/Buster_Box_v2/scripts/settings_geany ~/.scripts
+cp -p ~/Bullseye_Box/scripts/settings_geany ~/.scripts
 cd ~/.scripts
 sudo ./settings_geany
 
 ## obmenu-generator
-cp -p ~/Buster_Box_v2/scripts/obmenu-generator.sh ~/.scripts
+cp -p ~/Bullseye_Box/scripts/obmenu-generator.sh ~/.scripts
 
 # mkdir ~/projects
 # cd ~/projects
@@ -123,8 +123,8 @@ sudo chmod --recursive 777 ~/.config/nomacs
 # sudo ./install.sh
 
 # Copy wallpapers folderes
-sudo cp -r ~/Buster_Box_v2/WALLPAPERS/Wallpapers_Debian /usr/share/backgrounds
-sudo cp -r ~/Buster_Box_v2/WALLPAPERS/wallpapers-pixabay /usr/share/backgrounds
+sudo cp -r ~/Bullseye_Box/WALLPAPERS/Wallpapers_Debian /usr/share/backgrounds
+sudo cp -r ~/Bullseye_Box/WALLPAPERS/wallpapers-pixabay /usr/share/backgrounds
 
 # sudo sed -i 's!wallpapers-pack1!wallpapers-pixabay!' ~/projects/debian-openbox/15_openbox_wallpaper-packs/install.sh
 # sudo sed -i 's!bl-colorful-aptenodytes-forsteri-by-nixiepro.png!bridge-2936500_1920.jpg!' ~/projects/debian-openbox/15_openbox_wallpaper-packs/install.sh
@@ -134,7 +134,7 @@ sudo cp -r ~/Buster_Box_v2/WALLPAPERS/wallpapers-pixabay /usr/share/backgrounds
 # cd ~/projects/debian-openbox/15_openbox_wallpaper-packs
 # sudo ./install.sh
 
-sudo cp ~/Buster_Box_v2/WALLPAPERS/Wallpapers_Debian/lightdm_login.jpg /usr/share/images/desktop-base
+sudo cp ~/Bullseye_Box/WALLPAPERS/Wallpapers_Debian/lightdm_login.jpg /usr/share/images/desktop-base
 sudo chmod 777 /usr/share/images/desktop-base/lightdm_login.jpg
 sudo sed -i 's!#background=!background=/usr/share/images/desktop-base/lightdm_login.jpg!' /etc/lightdm/lightdm-gtk-greeter.conf
 
@@ -160,14 +160,14 @@ sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ranger.des
 sudo sed -i 's!Exec=su-to-root -X -c /usr/sbin/disk-manager!Exec=sudo /usr/sbin/disk-manager!' /usr/share/applications/disk-manager.desktop
 
 mkdir -p ~/.urxvt/ext
-cp -p ~/Buster_Box_v2/ext/* ~/.urxvt/ext/
+cp -p ~/Bullseye_Box/ext/* ~/.urxvt/ext/
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/urxvtc 50
 sudo update-alternatives --set x-terminal-emulator /usr/bin/urxvtc
 
-cd ~/Buster_Box_v2/scripts/openbox_conky
+cd ~/Bullseye_Box/scripts/openbox_conky
 sudo ./install.sh
 
-cd ~/Buster_Box_v2/scripts/install_vim/
+cd ~/Bullseye_Box/scripts/install_vim/
 sudo ./install.sh
 
 #sudo chown -R $(logname):$(logname) /home/$(logname)/
