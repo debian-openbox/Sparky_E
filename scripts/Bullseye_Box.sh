@@ -16,13 +16,13 @@ find ~/Bullseye_Box -type f -exec chmod 755 {} \;
 
 sudo apt-get update
 
-sudo apt install -y xorg lightdm openbox obconf tint2 lxappearance menu bleachbit mpd ncmpcpp 
+sudo apt install -y xorg lightdm openbox obconf tint2 lxappearance menu bleachbit mpd ncmpcpp geany synaptic ranger doublecmd-common terminator rxvt-unicode 
 sudo apt install -y ttf-mscorefonts-installer qbittorrent --no-install-recommends
 sudo apt install -y pcmanfm-qt --no-install-recommends
 
 sudo apt-get install -y micro firmware-linux firmware-linux-nonfree firmware-misc-nonfree
 
-sudo apt-get install -y rxvt-unicode mousepad apt-rdepends compton compton-conf firefox-esr xsel mirage pulseaudio numlockx pavucontrol mlocate vlc arandr apt-file synaptic doublecmd-common xutils mesa-utils xarchiver htop sysstat acpi hardinfo hddtemp wicd xfburn gnome-disk-utility python3-pip  fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder ranger geany gdebi fbxkb mpv curl gmrun xscreensaver galternatives pnmixer sxiv scrot xsettingsd git wmctrl pm-utils terminator arc-theme numix-icon-theme nitrogen policykit-1-gnome udiskie
+sudo apt-get install -y mousepad apt-rdepends compton compton-conf firefox-esr xsel mirage pulseaudio numlockx pavucontrol mlocate vlc arandr apt-file xutils mesa-utils xarchiver htop sysstat acpi hardinfo hddtemp wicd xfburn gnome-disk-utility python3-pip  fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder gdebi fbxkb mpv curl gmrun xscreensaver galternatives pnmixer sxiv scrot xsettingsd git wmctrl pm-utils arc-theme numix-icon-theme nitrogen policykit-1-gnome udiskie
 
 cp -Rp ~/Bullseye_Box/.config ~/
 
