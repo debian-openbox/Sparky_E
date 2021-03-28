@@ -1,9 +1,10 @@
 #!/bin/bash
 
-default_user=$(logname 2>/dev/null || echo ${SUDO_USER:-${USER}})
-HOME="/home/${default_user}"
+#default_user=$(logname 2>/dev/null || echo ${SUDO_USER:-${USER}})
+#HOME="/home/${default_user}"
 
 mkdir -p ~/.config/geany/colorschemes
+sudo chmod 755 ~/.config/geany/colorschemes
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/monokai.conf -O ~/.config/geany/colorschemes/monokai.conf
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/bespin.conf -O ~/.config/geany/colorschemes/bespin.conf 
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/black.conf -O ~/.config/geany/colorschemes/black.conf
@@ -39,6 +40,6 @@ wget https://raw.github.com/geany/geany-themes/master/colorschemes/ubuntu.conf -
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/vibrant-ink.conf -O ~/.config/geany/colorschemes/vibrant-ink.conf
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/zenburn.conf -O ~/.config/geany/colorschemes/zenburn.conf
 
-sudo chmod --recursive 777 ~/.config/geany
+find ~/.config/geany/colorschemes -type f -exec chmod 755 {} \;
 
 
