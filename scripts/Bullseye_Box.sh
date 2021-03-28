@@ -22,7 +22,7 @@ sudo apt install -y pcmanfm-qt --no-install-recommends
 
 sudo apt-get install -y micro firmware-linux firmware-linux-nonfree firmware-misc-nonfree
 
-sudo apt-get install -y mousepad apt-rdepends compton compton-conf firefox-esr xsel mirage pulseaudio numlockx pavucontrol mlocate vlc arandr apt-file xutils mesa-utils xarchiver htop sysstat acpi hardinfo hddtemp wicd xfburn gnome-disk-utility python3-pip  fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder gdebi fbxkb mpv curl gmrun xscreensaver galternatives pnmixer sxiv scrot xsettingsd git wmctrl pm-utils arc-theme numix-icon-theme nitrogen policykit-1-gnome udiskie
+sudo apt-get install -y mousepad apt-rdepends compton compton-conf firefox-esr xsel mirage pulseaudio numlockx pavucontrol mlocate vlc arandr apt-file xutils mesa-utils xarchiver htop sysstat acpi hardinfo hddtemp network-manager network-manager-gnome net-tools nmap resolvconf dnsutils libglu1-mesa xfburn gnome-disk-utility python3-pip  fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder gdebi fbxkb mpv curl gmrun xscreensaver galternatives pnmixer sxiv scrot xsettingsd git wmctrl pm-utils arc-theme numix-icon-theme nitrogen policykit-1-gnome udiskie
 
 cp -Rp ~/Bullseye_Box/.config ~/
 
@@ -96,7 +96,7 @@ cp -p ~/Bullseye_Box/scripts/obmenu-generator.sh ~/.scripts
 # sudo ./install.sh
 
 cd && wget -O wps-office.deb https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9719/wps-office_11.1.0.9719.XA_amd64.deb
-sudo dpkg -i wps-office.deb
+sudo apt install ./wps-office.deb
 sudo apt-get -f install && rm wps-office.deb
 cp -p ~/Bullseye_Box/scripts/install_missing_wps_fonts.sh ~/.scripts
 cd ~/.scripts
