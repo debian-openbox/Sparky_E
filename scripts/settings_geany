@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#default_user=$(logname 2>/dev/null || echo ${SUDO_USER:-${USER}})
-#HOME="/home/${default_user}"
+default_user=$(logname 2>/dev/null || echo ${SUDO_USER:-${USER}})
+HOME="/home/${default_user}"
 
 mkdir -p ~/.config/geany/colorschemes
 sudo chmod 755 ~/.config/geany/colorschemes
