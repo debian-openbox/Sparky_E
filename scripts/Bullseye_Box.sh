@@ -96,7 +96,7 @@ cp -p ~/Bullseye_Box/scripts/obmenu-generator.sh ~/.scripts
 # sudo ./install.sh
 
 cd && wget -O wps-office.deb https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9719/wps-office_11.1.0.9719.XA_amd64.deb
-sudo apt install ./wps-office.deb
+sudo dpkg -i wps-office.deb
 sudo apt-get -f install && rm wps-office.deb
 cp -p ~/Bullseye_Box/scripts/install_missing_wps_fonts.sh ~/.scripts
 cd ~/.scripts
@@ -104,10 +104,10 @@ sudo ./install_missing_wps_fonts.sh
 
 
 mkdir /home/$(logname)/.themes 
-sudo chmod -R 755 /home/$(logname)/.themes
+sudo chmod 755 /home/$(logname)/.themes
 sudo chown -R $(logname):$(logname) ~/.themes
-cd ~/.themes
-git clone https://gitlab.com/dwt1/dt-dark-theme.git 
+folder=$(/home/$(logname)/.themes)
+git clone https://gitlab.com/dwt1/dt-dark-theme.git $folder  
 
 # cd ~/projects/debian-openbox/10_openbox_conky
 # sudo ./install.sh
