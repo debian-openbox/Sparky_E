@@ -4,7 +4,7 @@
 #HOME="/home/${default_user}"
 
 mkdir -p /home/$(logname)/.config/geany/colorschemes
-sudo chmod 755 /home/$(logname)/.config/geany/colorschemes
+sudo chmod 777 /home/$(logname)/.config/geany/colorschemes
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/monokai.conf -O /home/$(logname)/.config/geany/colorschemes/monokai.conf
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/bespin.conf -O /home/$(logname)/.config/geany/colorschemes/bespin.conf 
 wget https://raw.github.com/geany/geany-themes/master/colorschemes/black.conf -O /home/$(logname)/.config/geany/colorschemes/black.conf
