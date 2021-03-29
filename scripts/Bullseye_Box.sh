@@ -105,7 +105,7 @@ sudo ./install_missing_wps_fonts.sh
 
 mkdir /home/$(logname)/.themes 
 sudo chmod 777 /home/$(logname)/.themes
-sudo chown -R $(logname):$(logname) ~/.themes
+sudo chown -R $(logname):$(logname) /home/$(logname)/.themes
 folder=$(/home/$(logname)/.themes)
 git clone https://gitlab.com/dwt1/dt-dark-theme.git $folder  
 
