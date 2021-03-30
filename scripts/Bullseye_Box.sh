@@ -100,7 +100,7 @@ sudo chmod 777 /home/$(logname)/wps-office.deb
 sudo dpkg -i wps-office.deb
 sudo apt-get -f install && rm wps-office.deb
 cp -p /home/$(logname)/Bullseye_Box/scripts/install_missing_wps_fonts.sh /home/$(logname)/.scripts
-cd /home/$(logname).scripts
+cd /home/$(logname)/.scripts
 sudo ./install_missing_wps_fonts.sh
 
 
@@ -108,7 +108,8 @@ mkdir -p /home/$(logname)/.themes/dt-dark-theme
 sudo chmod 777 /home/$(logname)/.themes /home/$(logname)/.themes/dt-dark-theme
 sudo chown -R $(logname):$(logname) /home/$(logname)/.themes
 #folder=$(/home/$(logname)/.themes)
-git clone https://gitlab.com/dwt1/dt-dark-theme.git /home/$(logname)/.themes/dt-dark-theme  
+#git clone https://gitlab.com/dwt1/dt-dark-theme.git /home/$(logname)/.themes/dt-dark-theme
+cd /home/$(logname)/scripts && sudo ./DistroTube_dark-theme.sh
 
 # cd ~/projects/debian-openbox/10_openbox_conky
 # sudo ./install.sh
@@ -118,7 +119,7 @@ git clone https://gitlab.com/dwt1/dt-dark-theme.git /home/$(logname)/.themes/dt-
 
 # cd ~/projects/debian-openbox/10_openbox_nomacs-viewer
 # sudo ./install.sh
-sudo chmod --recursive 777 ~/.config/nomacs
+# sudo chmod --recursive 777 ~/.config/nomacs
 
 # cd ~/projects/debian-openbox/config_disable-services
 # sudo ./install.sh
