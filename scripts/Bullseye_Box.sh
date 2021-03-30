@@ -75,9 +75,9 @@ cp -p ~/Bullseye_Box/scripts/screeny ~/.scripts
 cp -p ~/Bullseye_Box/scripts/reinstall_youtube-dl.sh ~/.scripts
 
 ## Geany theme settings
-cp -p ~/Bullseye_Box/scripts/settings_geany ~/.scripts
-cd ~/.scripts
-sudo ./settings_geany
+# cp -p ~/Bullseye_Box/scripts/settings_geany ~/.scripts
+# cd ~/.scripts
+# sudo ./settings_geany
 
 ## obmenu-generator
 cp -p ~/Bullseye_Box/scripts/obmenu-generator.sh ~/.scripts
