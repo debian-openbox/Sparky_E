@@ -104,7 +104,7 @@ cd /home/$(logname)/.scripts
 sudo ./install_missing_wps_fonts.sh
 
 # dt-dark-theme
-cp -p /home/$(logname)/Bullseye_Box/.themes /home/$(logname)/
+cp -pR /home/$(logname)/Bullseye_Box/.themes /home/$(logname)/
 
 
 # cd ~/projects/debian-openbox/10_openbox_conky
