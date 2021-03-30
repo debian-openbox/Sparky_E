@@ -16,7 +16,7 @@ find ~/Bullseye_Box -type f -exec chmod 755 {} \;
 
 sudo apt-get update
 
-sudo apt install -y xorg lightdm openbox obconf tint2 lxappearance menu bleachbit mpd ncmpcpp geany synaptic ranger doublecmd-common terminator rxvt-unicode 
+sudo apt install -y xorg lightdm openbox obconf tint2 lxappearance menu bleachbit mpd ncmpcpp geany synaptic doublecmd-common terminator rxvt-unicode 
 sudo apt install -y ttf-mscorefonts-installer qbittorrent --no-install-recommends
 sudo apt install -y pcmanfm-qt --no-install-recommends
 
