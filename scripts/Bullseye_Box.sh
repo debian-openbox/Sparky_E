@@ -109,7 +109,7 @@ sudo chmod 777 /home/$(logname)/.themes /home/$(logname)/.themes/dt-dark-theme
 sudo chown -R $(logname):$(logname) /home/$(logname)/.themes
 #folder=$(/home/$(logname)/.themes)
 #git clone https://gitlab.com/dwt1/dt-dark-theme.git /home/$(logname)/.themes/dt-dark-theme
-cd /home/$(logname)/scripts && sudo ./DistroTube_dark-theme.sh
+cd /home/$(logname)/Bullseye_Box/scripts && sudo ./DistroTube_dark-theme.sh
 
 # cd ~/projects/debian-openbox/10_openbox_conky
 # sudo ./install.sh
