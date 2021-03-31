@@ -16,7 +16,7 @@ find ~/Bullseye_Box -type f -exec chmod 755 {} \;
 
 sudo apt-get update
 
-sudo apt install -y xorg lightdm openbox obconf tint2 lxappearance menu bleachbit mpd ncmpcpp geany synaptic doublecmd-common terminator rxvt-unicode 
+sudo apt install -y xorg lightdm openbox obconf tint2 lxappearance menu bleachbit mpd ncmpcpp geany synaptic doublecmd-common terminator rxvt-unicode ranger 
 sudo apt install -y ttf-mscorefonts-installer qbittorrent --no-install-recommends
 sudo apt install -y pcmanfm-qt --no-install-recommends
 
@@ -148,11 +148,11 @@ sudo sed -i "s/^.*Exec=htop.*$/$(cat /tmp/htop_replacement)/" /usr/share/applica
 
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/htop.desktop
 
-#echo "Exec=x-terminal-emulator -T 'ranger task manager' -e ranger" > /tmp/ranger_replacement
+echo "Exec=x-terminal-emulator -T 'ranger task manager' -e ranger" > /tmp/ranger_replacement
 
-#sudo sed -i "s/^.*Exec=ranger.*$/$(cat /tmp/ranger_replacement)/" /usr/share/applications/ranger.desktop
+sudo sed -i "s/^.*Exec=ranger.*$/$(cat /tmp/ranger_replacement)/" /usr/share/applications/ranger.desktop
 
-#sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ranger.desktop
+sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ranger.desktop
 
 mkdir -p ~/.urxvt/ext
 cp -p ~/Bullseye_Box/ext/* ~/.urxvt/ext/
