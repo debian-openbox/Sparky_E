@@ -41,7 +41,6 @@
 
 ## podesavanje QT tema na GTK baziranom sistemu:
    sudo apt-get install qt5-style-plugins
-   Iz padajuceg menija kliknemo save
    Za QT 5 aplikacije:
    sudo su root
    sudo echo "QT_QPA_PLATFORMTHEME=gtk2" >> /etc/environment
