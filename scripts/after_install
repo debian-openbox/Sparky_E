@@ -40,16 +40,14 @@
    sudo rm /swapfile
 
 ## podesavanje QT tema na GTK baziranom sistemu:
-   sudo apt-get install qt4-qtconfig
    sudo apt-get install qt5-style-plugins
-   otvorimo QT 4 settings aplikaciju i u tabu Appearance promenimo GUI Style u    GTK+
    Iz padajuceg menija kliknemo save
    Za QT 5 aplikacije:
    sudo su root
    sudo echo "QT_QPA_PLATFORMTHEME=gtk2" >> /etc/environment
    exit
+   
 ## Open as SUDO - PCManFM
 Go to Preferences → Advanced and set "Switch user command" to:
-
 lxsudo dbus-run-session -- %s
 
