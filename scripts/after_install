@@ -48,5 +48,8 @@
    sudo su root
    sudo echo "QT_QPA_PLATFORMTHEME=gtk2" >> /etc/environment
    exit
+## Open as SUDO - PCManFM
+Go to Preferences → Advanced and set "Switch user command" to:
 
+lxsudo dbus-run-session -- %s
 
