@@ -4,6 +4,9 @@ if [ ! -d /home/$(logname)/Reports ]; then
     mkdir /home/$(logname)/Reports
 fi
 
+sudo chown -R 1000 /home/$(logname)/Reports
+sudo chmod +x /home/$(logname)/Reports/*
+
 DIR=/home/$(logname)/Reports
 
 # wget output file
