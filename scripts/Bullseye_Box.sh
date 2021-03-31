@@ -96,6 +96,7 @@ cp -p ~/Bullseye_Box/scripts/obmenu-generator.sh ~/.scripts
 # sudo ./install.sh
 
 cd /home/$(logname)/Bullseye_Box/scripts && sudo ./wps-office.sh
+sudo chmod -R 755 /home/$(logname)/Reports
 cd /home/$(logname)/Reports
 sudo dpkg -i wps-office.deb
 sudo apt-get -f install && rm wps-office.deb
