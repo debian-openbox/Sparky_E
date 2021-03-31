@@ -4,8 +4,6 @@ if [ ! -d /home/$(logname)/Reports ]; then
     mkdir /home/$(logname)/Reports
 fi
 
-sudo chown -R 1000:1000 /home/$(logname)/Reports
-sudo chmod +x /home/$(logname)/Reports/*
 
 DIR=/home/$(logname)/Reports
 
@@ -21,4 +19,6 @@ URL=https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9719/wps-o
 cd $DIR
 wget $URL -O $FILE -o $LOGFILE
 
-rm $FILE
+sudo chown -R 1000:1000 /home/$(logname)/Reports
+sudo chmod +x /home/$(logname)/Reports/$FILE
+
