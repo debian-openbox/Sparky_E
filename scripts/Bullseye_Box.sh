@@ -159,11 +159,11 @@ cp -p ~/Bullseye_Box/ext/* ~/.urxvt/ext/
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/urxvtc 50
 sudo update-alternatives --set x-terminal-emulator /usr/bin/terminator
 
-# cd ~/Bullseye_Box/scripts/openbox_conky
-# sudo ./install.sh
+cd ~/Bullseye_Box/scripts/openbox_conky
+sudo ./install.sh
 
-# cd ~/Bullseye_Box/scripts/install_vim/
-# sudo ./install.sh
+cd ~/Bullseye_Box/scripts/install_vim/
+sudo ./install.sh
 
 #sudo chown -R $(logname):$(logname) /home/$(logname)/
 #find /home/$(logname) -name '.*' | xargs sudo chown $(logname):$(logname)
