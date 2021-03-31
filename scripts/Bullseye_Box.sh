@@ -157,7 +157,7 @@ sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/htop.deskt
 mkdir -p ~/.urxvt/ext
 cp -p ~/Bullseye_Box/ext/* ~/.urxvt/ext/
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/urxvtc 50
-sudo update-alternatives --set x-terminal-emulator /usr/bin/urxvtc
+sudo update-alternatives --set x-terminal-emulator /usr/bin/terminator
 
 # cd ~/Bullseye_Box/scripts/openbox_conky
 # sudo ./install.sh
