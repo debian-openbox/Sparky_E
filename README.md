@@ -18,7 +18,7 @@ _`git clone https://github.com/debian-openbox/Bullseye_Box.git`_
 1. promena aktivnog direktorijuma  
 _`cd Bullseye_Box`_
 1. maksimalno podizanje ovlašćenja pristupa repozitorijumu Bullseye_Box rekurzivno  
-_`sudo chmod --recursive 777 .`_
+_`sudo chmod --recursive 755 .`_
 1. promena aktivnog direktorijuma  
 _`cd scripts`_
 1. Startovanje skripte _Bullseye_Box.sh_  
@@ -30,7 +30,7 @@ promeniti putanju foldera sa muzikom ili ostaviti po default-u (_`~/Music`_):
 _`sudo geany ~/.mpd/mpd.conf`_  
 _`sudo geany ~/.ncmpcpp/config`_  
 _`sudo reboot`_
-1. Po želji možete instalirati obmenu-generator:  (ovo trenutno ne radi)  
+1. Po želji možete instalirati obmenu-generator:  (ovo trenutno ne radi ***this is not currently working*** )  
 _`cd ~/.scripts`_  
 _`sudo ./obmenu-generator.sh`_  
 ako želite ikonice na padajućem meniju:  
