@@ -1,8 +1,6 @@
 #!/bin/bash
 #
 # Writes sources.list in order to add non-free repository
-#
-#echo "Writes /etc/apt/sources.list in order to add $DEBIAN_RELEASE non-free repository"
 
 echo "# deb http://http.debian.net/debian $DEBIAN_RELEASE main" > /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
