@@ -2,20 +2,16 @@
 #
 # Writes sources.list in order to add non-free repository
 #
-
-
-DEBIAN_RELEASE=`awk -F"[)(]+" '/VERSION=/ {print $2}' /etc/os-release`
-
-echo "Writes /etc/apt/sources.list in order to add $DEBIAN_RELEASE non-free repository"
+#echo "Writes /etc/apt/sources.list in order to add $DEBIAN_RELEASE non-free repository"
 
 echo "# deb http://http.debian.net/debian $DEBIAN_RELEASE main" > /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
-echo "deb http://http.debian.net/debian/ $(DEBIAN_RELEASE) main contrib non-free" >> /etc/apt/sources.list
-echo "deb-src http://http.debian.net/debian/ $(DEBIAN_RELEASE) main contrib non-free" >> /etc/apt/sources.list
+echo "deb http://http.debian.net/debian/ bullseye main contrib non-free" >> /etc/apt/sources.list
+echo "deb-src http://http.debian.net/debian/ bullseye main contrib non-free" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
-echo "deb http://security.debian.org/ $(DEBIAN_RELEASE)-updates main contrib non-free" >> /etc/apt/sources.list
-echo "deb-src http://security.debian.org/ $(DEBIAN_RELEASE)-updates main contrib non-free" >> /etc/apt/sources.list
+echo "deb http://security.debian.org/ bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+echo "deb-src http://security.debian.org/ bullseye-updates main contrib non-free" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "# $DEBIAN_RELEASE-updates, previously known as "volatile"" >> /etc/apt/sources.list
-echo "deb http://http.debian.net/debian $(DEBIAN_RELEASE)-security main" >> /etc/apt/sources.list
-echo "deb-src http://http.debian.net/debian $(DEBIAN_RELEASE)-security main" >> /etc/apt/sources.list
+echo "deb http://http.debian.net/debian bullseye-security main" >> /etc/apt/sources.list
+echo "deb-src http://http.debian.net/debian bullseye-security main" >> /etc/apt/sources.list
