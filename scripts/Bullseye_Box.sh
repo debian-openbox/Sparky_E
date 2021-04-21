@@ -13,6 +13,8 @@ find ~/Bullseye_Box -type d -exec chmod 755 {} \;
 find ~/Bullseye_Box -type f -exec chmod 755 {} \;
 
 #sudo apt-get install -y software-properties-common && sudo apt-add-repository contrib && sudo apt-add-repository non-free
+cd ~/Bullseye_Box/scripts
+sudo ./non-free.sh
 
 sudo apt-get update
 
