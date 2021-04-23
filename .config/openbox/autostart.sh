@@ -22,6 +22,8 @@ pnmixer &
 
 udiskie &
 
+package-update-indicator &
+
 compton -cC -i 0.85 -e 0.85 -m 0.9 -r 4 -l -4 -t -4 &
 # $HOME/bin/start-compton.sh &
 
