@@ -11,5 +11,5 @@ echo "deb http://deb.debian.org/debian/ bullseye-updates main contrib non-free" 
 echo "deb-src http://deb.debian.org/debian/ bullseye-updates main contrib non-free" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "# $DEBIAN_RELEASE-updates, previously known as "volatile"" >> /etc/apt/sources.list
-echo "deb http://deb.debian.org/debian-security bullseye-security main" >> /etc/apt/sources.list
-echo "deb-src http://deb.debian.org/debian-security bullseye-security main" >> /etc/apt/sources.list
+echo "deb http://deb.debian.org/debian-security bullseye-security main contrib non-free" >> /etc/apt/sources.list
+echo "deb-src http://deb.debian.org/debian-security bullseye-security main contrib non-free" >> /etc/apt/sources.list
