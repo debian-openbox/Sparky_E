@@ -12,6 +12,14 @@ sudo chown -R $(logname):$(logname) /home/$(logname)/
 find ~/Sparky_Box -type d -exec chmod 755 {} \;
 find ~/Sparky_Box -type f -exec chmod 755 {} \;
 
+echo "sleep 8 && /usr/bin/conky-session &" >> ~/.config/openbox/autostart.sh
+echo "package-update-indicator &" >> ~/.config/openbox/autostart.sh
+echo "compton -cC -i 0.85 -e 0.85 -m 0.9 -r 4 -l -4 -t -4 &" >> ~/.config/openbox/autostart.sh
+echo "numlockx on &" >> ~/.config/openbox/autostart.sh
+echo "~/keyboard.sh" >> ~/.config/openbox/autostart.sh
+echo "fbxkb &" >> ~/.config/openbox/autostart.sh
+echo "urxvtd -q &" >> ~/.config/openbox/autostart.sh
+
 sudo apt-get update
 
 sudo apt install -y  mpd ncmpcpp geany terminator rxvt-unicode nmap net-tools libglu1-mesa fbxkb mpv mlocate vlc arandr apt-file xutils mesa-utils dnsutils xfburn simplescreenrecorder htop apt-rdepends compton compton-conf firefox-esr xsel numlockx sysstat acpi hardinfo hddtemp gnome-disk-utility python3-pip fonts-ubuntu fonts-ubuntu-console suckless-tools sxiv xsettingsd git wmctrl arc-theme numix-icon-theme psmisc flameshot package-update-indicator && sudo apt install -y ttf-mscorefonts-installer qbittorrent pcmanfm-qt --no-install-recommends
