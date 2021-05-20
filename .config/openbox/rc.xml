@@ -440,7 +440,6 @@
         <command>system-config-printer</command>
       </action>
     </keybind>
-
     <!-- Keybindings for tiling -->
     <keybind key="A-KP_5">
       <action name="ToggleMaximize"/>
