@@ -1,7 +1,7 @@
 @search,,5,5,150,20,3,left,top,auto,#000000 0,Type to Search
 ^sep()
 File,pcmanfm-qt,system-file-manager
-Web,firefox-esr,web-browser
+Browser,firefox,firefox-esr
 Terminal,x-terminal-emulator,utilities-terminal
 Run,gexec,system-run
 ^sep()
