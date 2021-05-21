@@ -31,6 +31,8 @@ cp -Rp ~/Sparky_Box/.config/mpv ~/.config
 cp -Rp ~/Sparky_Box/.config/tint2 ~/.config
 cp -Rp ~/Sparky_Box/.config/compton.conf ~/.config
 cp -Rp ~/Sparky_Box/.config/openbox/rc.xml ~/.config/openbox/
+mkdir -p ~/.config/pcmanfm-qt/default
+cp -Rp ~/Sparky_Box/.config/pcmanfm-qt/default/settings.conf ~/.config/pcmanfm-qt/default/
 
 cp -p ~/Sparky_Box/.Xresources ~/
 
