@@ -35,6 +35,8 @@ mkdir ~/.config/terminator
 cp -Rp ~/Sparky_Box/.config/terminator/config ~/.config/terminator/
 mkdir -p ~/.config/pcmanfm-qt/default
 cp -Rp ~/Sparky_Box/.config/pcmanfm-qt/default/settings.conf ~/.config/pcmanfm-qt/default/
+mkdir ~/.config/jgmenu
+cp -Rp ~/Sparky_Box/.config/jgmenu/prepend.csv ~/.config/jgmenu/
 
 cp -p ~/Sparky_Box/.Xresources ~/
 
@@ -168,6 +170,9 @@ mkdir -p ~/.urxvt/ext
 cp -p ~/Sparky_Box/ext/* ~/.urxvt/ext/
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/urxvtc 50
 sudo update-alternatives --set x-terminal-emulator /usr/bin/terminator
+
+# replace thunar with pcmanfm-qt
+sed -i '/thunar --daemon &/c\pcmanfm --desktop &' ~/.config/openbox/autostart.sh
 
 cd ~/Sparky_Box/scripts/openbox_conky
 sudo ./install.sh
