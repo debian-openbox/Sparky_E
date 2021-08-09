@@ -8,9 +8,9 @@
 1. Instalirati na odabranu particiju
    * ažuriranje softvera:  
       * _` sudo apt update && sudo apt full-upgrade`_  
-      * U procesu instalacije izabrati _'DE Enligtenment'_
-   ** _`sudo apt install git`_
-   ** _`sudo reboot`_
+      * U procesu instalacije izabrati _'DE Enligtenment'_  
+      * _`sudo apt install git`_  
+      * _`sudo reboot`_
 1. kloniranje git repozitorijuma Sparky_E  
 _`git clone https://github.com/debian-openbox/Sparky_E.git`_
 1. promena aktivnog direktorijuma  
