@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://standards.freedesktop.org/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Favorites</Name>
+  <DefaultAppDirs/>
+  <DefaultDirectoryDirs/>
+  <Layout>
+    <Filename>pcmanfm-qt.desktop</Filename>
+    <Filename>firefox-esr.desktop</Filename>
+    <Filename>geany.desktop</Filename>
+    <Filename>htop.desktop</Filename>
+    <Filename>ncmpcpp.desktop</Filename>
+  </Layout>
+  <Include>
+    <Filename>pcmanfm-qt.desktop</Filename>
+    <Filename>firefox-esr.desktop</Filename>
+    <Filename>geany.desktop</Filename>
+    <Filename>htop.desktop</Filename>
+    <Filename>ncmpcpp.desktop</Filename>
+  </Include>
+</Menu>
