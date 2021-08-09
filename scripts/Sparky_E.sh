@@ -87,9 +87,9 @@ sudo apt-get -f install && rm wps-office.deb
 cd /home/$(logname)/Sparky_E/scripts/
 sudo ./install_missing_wps_fonts.sh
 
-# dt-dark-theme
-cp -pR /home/$(logname)/Sparky_E/.themes/* /home/$(logname)/.elementary/themes
-
+# E-themes
+mkdir /home/$(logname)/.elementary/themes
+cp -pR /home/$(logname)/Sparky_E/.themes/* /home/$(logname)/.elementary/themes/
 
 # cd ~/projects/debian-openE/10_openE_conky
 # sudo ./install.sh
