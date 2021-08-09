@@ -1,8 +1,8 @@
-## **Sparky_Box** (instructions in Serbian)
+## **Sparky_E** (instructions in Serbian)
 ### *Sparky Linux sa OpenBox WM*
 
 1. Potrebno je prvo skinuti sa sajta https://sparkylinux.org/download/rolling/ ISO instalacioni fajl:
-    * MinimalGUI https://distrowatch.com/dwres/torrents/sparkylinux-2021.03-x86_64-minimalgui.iso.torrent  
+    * MinimalGUI https://distrowatch.com/dwres/torrents/sparkylinux-2021.06-x86_64-minimalcli.iso.torrent  
 
 1. Pomoću Rufusa ili Etchera napraviti butabilni instalacioni USB Flash 
 1. Instalirati na odabranu particiju
@@ -10,16 +10,16 @@
 _` sudo apt update && sudo apt full-upgrade`_
 1. instaliranje git-a  
 _`sudo apt install git`_
-1. kloniranje git repozitorijuma Sparky_Box  
-_`git clone https://github.com/debian-openbox/Sparky_Box.git`_
+1. kloniranje git repozitorijuma Sparky_E  
+_`git clone https://github.com/debian-openbox/Sparky_E.git`_
 1. promena aktivnog direktorijuma  
-_`cd Sparky_Box`_
-1. maksimalno podizanje ovlašćenja pristupa repozitorijumu Sparky_Box rekurzivno  
+_`cd Sparky_E`_
+1. maksimalno podizanje ovlašćenja pristupa repozitorijumu Sparky_E rekurzivno  
 _`sudo chmod --recursive 755 .`_
 1. promena aktivnog direktorijuma  
 _`cd scripts`_
-1. Startovanje skripte _Sparky_Box.sh_  
-_`sudo ./Sparky_Box.sh`_
+1. Startovanje skripte _Sparky_E.sh_  
+_`sudo ./Sparky_E.sh`_
 1. Restart  
 _`sudo reboot`_
 1. Posle restarta potrebno je u konfiguracionim fajlovima **ncmpcpp** (_`~/.mpd/mpd.conf`_ i _`~/.ncmpcpp/config`_)  
