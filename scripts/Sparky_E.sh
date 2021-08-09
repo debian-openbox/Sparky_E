@@ -12,37 +12,26 @@ sudo chown -R $(logname):$(logname) /home/$(logname)/
 find ~/Sparky_Box -type d -exec chmod 755 {} \;
 find ~/Sparky_Box -type f -exec chmod 755 {} \;
 
-echo "sleep 8 && /usr/bin/conky-session &" >> ~/.config/openbox/autostart.sh
-echo "package-update-indicator &" >> ~/.config/openbox/autostart.sh
-echo "compton -cC -i 0.85 -e 0.85 -m 0.9 -r 4 -l -4 -t -4 &" >> ~/.config/openbox/autostart.sh
-echo "numlockx on &" >> ~/.config/openbox/autostart.sh
-echo "~/keyboard.sh" >> ~/.config/openbox/autostart.sh
-echo "fbxkb &" >> ~/.config/openbox/autostart.sh
-echo "urxvtd -q &" >> ~/.config/openbox/autostart.sh
-
 sudo apt-get update
 
 sudo apt install -y  mpd ncmpcpp geany terminator rxvt-unicode nmap net-tools mpv vlc htop firefox-esrgnome-disk-utility python3-pip fonts-ubuntu fonts-ubuntu-console suckless-tools sxiv git wmctrl arc-theme oxygen-icon-theme psmisc flameshot package-update-indicator ttf-mscorefonts-installer && sudo apt install qbittorrent --no-install-recommends && sudo apt install pcmanfm-qt --no-install-recommends
 
 mkdir ~/.config/
+echo "sleep 8 && /usr/bin/conky-session &" >> ~/.config/autostart.sh
+echo "package-update-indicator &" >> ~/.config/autostart.sh
+echo "compton -cC -i 0.85 -e 0.85 -m 0.9 -r 4 -l -4 -t -4 &" >> ~/.config/autostart.sh
+echo "urxvtd -q &" >> ~/.config/autostart.sh
 
 cp -Rp ~/Sparky_Box/.config/geany ~/.config
 cp -Rp ~/Sparky_Box/.config/mpv ~/.config
-cp -Rp ~/Sparky_Box/.config/tint2 ~/.config
+#cp -Rp ~/Sparky_Box/.config/tint2 ~/.config
 cp -Rp ~/Sparky_Box/.config/compton.conf ~/.config
-cp -Rp ~/Sparky_Box/.config/openbox/rc.xml ~/.config/openbox/
 mkdir ~/.config/terminator
 cp -Rp ~/Sparky_Box/.config/terminator/config ~/.config/terminator/
 mkdir -p ~/.config/pcmanfm-qt/default
 cp -Rp ~/Sparky_Box/.config/pcmanfm-qt/default/settings.conf ~/.config/pcmanfm-qt/default/
-mkdir ~/.config/jgmenu
-cp -Rp ~/Sparky_Box/.config/jgmenu/prepend.csv ~/.config/jgmenu/
 
 cp -p ~/Sparky_Box/.Xresources ~/
-
-cp -p ~/Sparky_Box/keyboard.sh ~/
-
-sudo cp -p ~/Sparky_Box/rs.png /usr/share/fbxkb/images/rs.png
 
 sudo cp ~/Sparky_Box/ncmpcpp_48x48.png /usr/share/icons
 
@@ -91,22 +80,6 @@ cp -p ~/Sparky_Box/scripts/reinstall_youtube-dl.sh ~/.scripts
 # cd ~/.scripts
 # sudo ./settings_geany
 
-## obmenu-generator
-cp -p ~/Sparky_Box/scripts/obmenu-generator.sh ~/.scripts
-
-# mkdir ~/projects
-# cd ~/projects
-# git clone https://github.com/speja969/debian-openbox.git
-
-# cd ~/projects/debian-openbox/10_openbox_terminator
-# sudo ./install.sh
-
-# cd ~/projects/debian-openbox/10_openbox_arc-theme-gtk
-# sudo ./install.sh
-
-# cd ~/projects/debian-openbox/10_openbox_numix-paper-icons
-# sudo ./install.sh
-
 cd /home/$(logname)/Sparky_Box/scripts && sudo ./wps-office.sh
 cd /home/$(logname)/Reports
 sudo dpkg -i wps-office.deb
@@ -115,7 +88,7 @@ cd /home/$(logname)/Sparky_Box/scripts/
 sudo ./install_missing_wps_fonts.sh
 
 # dt-dark-theme
-cp -pR /home/$(logname)/Sparky_Box/.themes /home/$(logname)/
+cp -pR /home/$(logname)/Sparky_Box/.themes/* /home/$(logname)/.elementary/themes
 
 
 # cd ~/projects/debian-openbox/10_openbox_conky
