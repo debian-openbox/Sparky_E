@@ -2,14 +2,15 @@
 ### *Sparky Linux sa Enlightenment WM*
 
 1. Potrebno je prvo skinuti sa sajta https://sparkylinux.org/download/rolling/ ISO instalacioni fajl:
-    * MinimalGUI https://distrowatch.com/dwres/torrents/sparkylinux-2021.06-x86_64-minimalcli.iso.torrent  
+    *  https://distrowatch.com/dwres/torrents/sparkylinux-2021.06-x86_64-minimalcli.iso.torrent 
 
-1. Pomoću Rufusa ili Etchera napraviti butabilni instalacioni USB Flash 
+1. Pomoću Etchera napraviti butabilni instalacioni USB Flash 
 1. Instalirati na odabranu particiju
-1. ažuriranje softvera  
-_` sudo apt update && sudo apt full-upgrade`_
-1. instaliranje git-a  
-_`sudo apt install git`_
+   * ažuriranje softvera:  
+   ** _` sudo apt update && sudo apt full-upgrade`_
+   ** U procesu instalacije izabrati _'DE Enligtenment'_
+   ** _`sudo apt install git`_
+   ** _`sudo reboot`_
 1. kloniranje git repozitorijuma Sparky_E  
 _`git clone https://github.com/debian-openbox/Sparky_E.git`_
 1. promena aktivnog direktorijuma  
