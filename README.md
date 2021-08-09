@@ -7,8 +7,8 @@
 1. Pomoću Etchera napraviti butabilni instalacioni USB Flash 
 1. Instalirati na odabranu particiju
    * ažuriranje softvera:  
-   * _` sudo apt update && sudo apt full-upgrade`_
-   ** U procesu instalacije izabrati _'DE Enligtenment'_
+      * _` sudo apt update && sudo apt full-upgrade`_  
+      * U procesu instalacije izabrati _'DE Enligtenment'_
    ** _`sudo apt install git`_
    ** _`sudo reboot`_
 1. kloniranje git repozitorijuma Sparky_E  
