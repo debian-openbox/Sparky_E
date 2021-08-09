@@ -1,5 +1,5 @@
 ## **Sparky_E** (instructions in Serbian)
-### *Sparky Linux sa OpenBox WM*
+### *Sparky Linux sa Enlightenment WM*
 
 1. Potrebno je prvo skinuti sa sajta https://sparkylinux.org/download/rolling/ ISO instalacioni fajl:
     * MinimalGUI https://distrowatch.com/dwres/torrents/sparkylinux-2021.06-x86_64-minimalcli.iso.torrent  
