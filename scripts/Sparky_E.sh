@@ -31,6 +31,7 @@ cp -Rp ~/Sparky_E/.config/terminator/config ~/.config/terminator/
 mkdir -p ~/.config/pcmanfm-qt/default
 cp -Rp ~/Sparky_E/.config/pcmanfm-qt/default/settings.conf ~/.config/pcmanfm-qt/default/
 cp -Rp ~/Sparky_E/.e ~/
+cp -Rp ~/Sparky_E/.elementary ~/
 
 cp -p ~/Sparky_E/.Xresources ~/
 
