@@ -9,8 +9,8 @@ mkdir ~/.scripts
 sudo chmod -R 755 ~/.scripts
 
 sudo chown -R $(logname):$(logname) /home/$(logname)/
-find ~/Sparky_Box -type d -exec chmod 755 {} \;
-find ~/Sparky_Box -type f -exec chmod 755 {} \;
+find ~/Sparky_E -type d -exec chmod 755 {} \;
+find ~/Sparky_E -type f -exec chmod 755 {} \;
 
 sudo apt-get update
 
@@ -22,18 +22,18 @@ echo "package-update-indicator &" >> ~/.config/autostart.sh
 echo "compton -cC -i 0.85 -e 0.85 -m 0.9 -r 4 -l -4 -t -4 &" >> ~/.config/autostart.sh
 echo "urxvtd -q &" >> ~/.config/autostart.sh
 
-cp -Rp ~/Sparky_Box/.config/geany ~/.config
-cp -Rp ~/Sparky_Box/.config/mpv ~/.config
-#cp -Rp ~/Sparky_Box/.config/tint2 ~/.config
-cp -Rp ~/Sparky_Box/.config/compton.conf ~/.config
+cp -Rp ~/Sparky_E/.config/geany ~/.config
+cp -Rp ~/Sparky_E/.config/mpv ~/.config
+#cp -Rp ~/Sparky_E/.config/tint2 ~/.config
+cp -Rp ~/Sparky_E/.config/compton.conf ~/.config
 mkdir ~/.config/terminator
-cp -Rp ~/Sparky_Box/.config/terminator/config ~/.config/terminator/
+cp -Rp ~/Sparky_E/.config/terminator/config ~/.config/terminator/
 mkdir -p ~/.config/pcmanfm-qt/default
-cp -Rp ~/Sparky_Box/.config/pcmanfm-qt/default/settings.conf ~/.config/pcmanfm-qt/default/
+cp -Rp ~/Sparky_E/.config/pcmanfm-qt/default/settings.conf ~/.config/pcmanfm-qt/default/
 
-cp -p ~/Sparky_Box/.Xresources ~/
+cp -p ~/Sparky_E/.Xresources ~/
 
-sudo cp ~/Sparky_Box/ncmpcpp_48x48.png /usr/share/icons
+sudo cp ~/Sparky_E/ncmpcpp_48x48.png /usr/share/icons
 
 #sudo chmod 777 /usr/share/icons/ncmpcpp_48x48.png
 
@@ -51,72 +51,72 @@ sudo cp ~/Sparky_Box/ncmpcpp_48x48.png /usr/share/icons
 #sudo chmod 777 ~/keyboard.sh
 
 ## debinfo -- prikaz resursa pri otvaranju terminala
-sudo cp ~/Sparky_Box/scripts/debinfo /usr/bin
+sudo cp ~/Sparky_E/scripts/debinfo /usr/bin
 sudo chmod 777 /usr/bin/debinfo
 echo debinfo >> ~/.bashrc
 
 ## instalacija comptona
-cp ~/Sparky_Box/scripts/install_compton.sh ~/.scripts
+cp ~/Sparky_E/scripts/install_compton.sh ~/.scripts
 mkdir ~/bin
-cp ~/Sparky_Box/start-compton.sh ~/bin
+cp ~/Sparky_E/start-compton.sh ~/bin
 sudo chmod -R 755 ~/bin
 
 ## instalacija ncmpcpp
-cp -Rp ~/Sparky_Box/.ncmpcpp ~/
-cp -Rp ~/Sparky_Box/.mpd ~/
+cp -Rp ~/Sparky_E/.ncmpcpp ~/
+cp -Rp ~/Sparky_E/.mpd ~/
 echo "Exec=x-terminal-emulator -T 'ncmpcpp' -e ncmpcpp" > /tmp/ncmpcpp_replacement
 sudo sed -i "s/^.*Exec=ncmpcpp.*$/$(cat /tmp/ncmpcpp_replacement)/" /usr/share/applications/ncmpcpp.desktop
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ncmpcpp.desktop
 sudo echo "Icon=/usr/share/icons/ncmpcpp_48x48.png" >> /usr/share/applications/ncmpcpp.desktop
 
 ## screeny
-cp -p ~/Sparky_Box/scripts/screeny ~/.scripts
+cp -p ~/Sparky_E/scripts/screeny ~/.scripts
 
 ## script for reinstall youtube-dl
-cp -p ~/Sparky_Box/scripts/reinstall_youtube-dl.sh ~/.scripts
+cp -p ~/Sparky_E/scripts/reinstall_youtube-dl.sh ~/.scripts
 
 ## Geany theme settings
-# cp -p ~/Sparky_Box/scripts/settings_geany ~/.scripts
+# cp -p ~/Sparky_E/scripts/settings_geany ~/.scripts
 # cd ~/.scripts
 # sudo ./settings_geany
 
-cd /home/$(logname)/Sparky_Box/scripts && sudo ./wps-office.sh
+cd /home/$(logname)/Sparky_E/scripts && sudo ./wps-office.sh
 cd /home/$(logname)/Reports
 sudo dpkg -i wps-office.deb
 sudo apt-get -f install && rm wps-office.deb
-cd /home/$(logname)/Sparky_Box/scripts/
+cd /home/$(logname)/Sparky_E/scripts/
 sudo ./install_missing_wps_fonts.sh
 
 # dt-dark-theme
-cp -pR /home/$(logname)/Sparky_Box/.themes/* /home/$(logname)/.elementary/themes
+cp -pR /home/$(logname)/Sparky_E/.themes/* /home/$(logname)/.elementary/themes
 
 
-# cd ~/projects/debian-openbox/10_openbox_conky
+# cd ~/projects/debian-openE/10_openE_conky
 # sudo ./install.sh
 
-# cd ~/projects/debian-openbox/config_shortcut-kill-x
+# cd ~/projects/debian-openE/config_shortcut-kill-x
 # sudo ./install.sh
 
-# cd ~/projects/debian-openbox/10_openbox_nomacs-viewer
+# cd ~/projects/debian-openE/10_openE_nomacs-viewer
 # sudo ./install.sh
 # sudo chmod --recursive 777 ~/.config/nomacs
 
-# cd ~/projects/debian-openbox/config_disable-services
+# cd ~/projects/debian-openE/config_disable-services
 # sudo ./install.sh
 
 # Copy wallpapers folderes
-sudo cp -r ~/Sparky_Box/WALLPAPERS/Wallpapers_Debian /usr/share/backgrounds
-sudo cp -r ~/Sparky_Box/WALLPAPERS/wallpapers-pixabay /usr/share/backgrounds
+sudo cp -r ~/Sparky_E/WALLPAPERS/Wallpapers_Debian /usr/share/backgrounds
+sudo cp -r ~/Sparky_E/WALLPAPERS/wallpapers-pixabay /usr/share/backgrounds
 
-# sudo sed -i 's!wallpapers-pack1!wallpapers-pixabay!' ~/projects/debian-openbox/15_openbox_wallpaper-packs/install.sh
-# sudo sed -i 's!bl-colorful-aptenodytes-forsteri-by-nixiepro.png!bridge-2936500_1920.jpg!' ~/projects/debian-openbox/15_openbox_wallpaper-packs/install.sh
-# sudo sed -i 's!/usr/share/backgrounds/wallpapers-pack1/bl-colorful-aptenodytes-forsteri-by-nixiepro.png!/usr/share/backgrounds/wallpapers-pixabay/bridge-2936500_1920.jpg!' ~/projects/debian-openbox/15_openbox_wallpaper-packs/bg-saved.cfg
+# sudo sed -i 's!wallpapers-pack1!wallpapers-pixabay!' ~/projects/debian-openE/15_openE_wallpaper-packs/install.sh
+# sudo sed -i 's!bl-colorful-aptenodytes-forsteri-by-nixiepro.png!bridge-2936500_1920.jpg!' ~/projects/debian-openE/15_openE_wallpaper-packs/install.sh
+# sudo sed -i 's!/usr/share/backgrounds/wallpapers-pack1/bl-colorful-aptenodytes-forsteri-by-nixiepro.png!/usr/share/backgrounds/wallpapers-pixabay/bridge-2936500_1920.jpg!' ~/projects/debian-openE/15_openE_wallpaper-packs/bg-saved.cfg
 
 # ACTION: Install nitrogen tool, copy more wallpapers pack and set default wallpaper to all users
-# cd ~/projects/debian-openbox/15_openbox_wallpaper-packs
+# cd ~/projects/debian-openE/15_openE_wallpaper-packs
 # sudo ./install.sh
 
-sudo cp ~/Sparky_Box/WALLPAPERS/Wallpapers_Debian/lightdm_login.jpg /usr/share/images/desktop-base
+sudo cp ~/Sparky_E/WALLPAPERS/Wallpapers_Debian/lightdm_login.jpg /usr/share/images/desktop-base
 sudo chmod 777 /usr/share/images/desktop-base/lightdm_login.jpg
 sudo sed -i 's!#background=!background=/usr/share/images/desktop-base/lightdm_login.jpg!' /etc/lightdm/lightdm-gtk-greeter.conf
 
@@ -140,17 +140,17 @@ xdg-mime default pcmanfm-qt.desktop inode/directory
 #sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ranger.desktop
 
 mkdir -p ~/.urxvt/ext
-cp -p ~/Sparky_Box/ext/* ~/.urxvt/ext/
+cp -p ~/Sparky_E/ext/* ~/.urxvt/ext/
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/urxvtc 50
 sudo update-alternatives --set x-terminal-emulator /usr/bin/terminator
 
 # replace thunar with pcmanfm-qt
-sed -i '/thunar --daemon &/c\pcmanfm --desktop &' ~/.config/openbox/autostart.sh
+sed -i '/thunar --daemon &/c\pcmanfm --desktop &' ~/.config/openE/autostart.sh
 
-cd ~/Sparky_Box/scripts/openbox_conky
+cd ~/Sparky_E/scripts/openE_conky
 sudo ./install.sh
 
-cd ~/Sparky_Box/scripts/install_vim/
+cd ~/Sparky_E/scripts/install_vim/
 sudo ./install.sh
 
 #sudo chown -R $(logname):$(logname) /home/$(logname)/
