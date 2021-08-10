@@ -22,6 +22,7 @@ echo "package-update-indicator &" >> ~/.config/autostart.sh
 echo "compton -cC -i 0.85 -e 0.85 -m 0.9 -r 4 -l -4 -t -4 &" >> ~/.config/autostart.sh
 echo "urxvtd -q &" >> ~/.config/autostart.sh
 
+cp -Rp ~/Sparky_E/.config/gtk-3.0 ~/.config
 cp -Rp ~/Sparky_E/.config/geany ~/.config
 cp -Rp ~/Sparky_E/.config/mpv ~/.config
 #cp -Rp ~/Sparky_E/.config/tint2 ~/.config
