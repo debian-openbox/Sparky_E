@@ -48,7 +48,7 @@ sudo cp -p --recursive /home/$(logname)/Sparky_E/scripts/wingrid* /usr/local/bin
 sudo chmod a+x /usr/local/bin/wingrid*
 mkdir /home/$(logname)/.config/wingrid
 cp -p /home/$(logname)/Sparky_E/wingrid.conf /home/$(logname)/.config/wingrid/
-sudo chmod a+x /usr/local/bin/wingrid*
+sudo chmod a+x /home/$(logname)/.config/wingrid/*
 
 # korekcija autorizacije za gdebi
 # sudo sed -i 's/<allow_active>auth_admin/<allow_active>yes/' /usr/share/polkit-1/actions/com.ubuntu.pkexec.gdebi-gtk.policy
