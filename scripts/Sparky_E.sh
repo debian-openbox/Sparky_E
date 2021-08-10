@@ -16,7 +16,7 @@ sudo apt-get update
 
 sudo apt install -y  mpd ncmpcpp geany terminator rxvt-unicode lxappearance nmap net-tools mpv vlc htop firefox-esr gnome-disk-utility python3-pip fonts-ubuntu fonts-ubuntu-console suckless-tools sxiv git wmctrl arc-theme oxygen-icon-theme psmisc flameshot qt5-style-plugins ttf-mscorefonts-installer && sudo apt install -y qbittorrent --no-install-recommends && sudo apt install -y pcmanfm-qt --no-install-recommends
 
-mkdir ~/.config/
+# mkdir ~/.config/
 echo "sleep 8 && /usr/bin/conky-session &" >> ~/.config/autostart.sh
 echo "package-update-indicator &" >> ~/.config/autostart.sh
 echo "compton -cC -i 0.85 -e 0.85 -m 0.9 -r 4 -l -4 -t -4 &" >> ~/.config/autostart.sh
