@@ -1,0 +1,20 @@
+[Desktop Entry]
+Hidden=false
+Exec=pcmanfm-qt %U
+Icon=/usr/share/icons/oxygen/base/64x64/apps/system-file-manager.png
+Type=Application
+NoDisplay=false
+Version=1.0
+MimeType=inode/directory;
+StartupNotify=true
+StartupWMClass=
+GenericName[en_US]=File Manager
+Comment=Browse the file system and manage the files
+DBusActivatable=false
+Categories=FileManager;Utility;Core;Qt;
+Terminal=false
+Name=PCManFM-Qt File Manager
+GenericName=File Manager
+Icon[en_US]=/usr/share/icons/oxygen/base/64x64/apps/system-file-manager.png
+Name[en_US]=PCManFM-Qt File Manager
+Comment[en_US]=Browse the file system and manage the files
