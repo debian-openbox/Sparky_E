@@ -35,6 +35,7 @@ cp -Rp ~/Sparky_E/.elementary ~/
 
 cp -p ~/Sparky_E/.Xresources ~/
 
+sudo chown root:root ~/Sparky_E/ncmpcpp_48x48.png
 sudo cp ~/Sparky_E/ncmpcpp_48x48.png /usr/share/icons
 
 #sudo chmod 777 /usr/share/icons/ncmpcpp_48x48.png
