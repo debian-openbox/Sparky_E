@@ -149,8 +149,8 @@ xdg-mime default pcmanfm-qt.desktop inode/directory
 
 #sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ranger.desktop
 
-mkdir -p ~/.urxvt/ext
-cp -p ~/Sparky_E/ext/* ~/.urxvt/ext/
+mkdir -p /home/$(logname)/.urxvt/ext
+cp -p /home/$(logname)/Sparky_E/ext/* /home/$(logname)/.urxvt/ext/
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/urxvtc 50
 sudo update-alternatives --set x-terminal-emulator /usr/bin/terminator
 
