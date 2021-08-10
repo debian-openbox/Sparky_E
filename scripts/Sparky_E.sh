@@ -33,7 +33,7 @@ mkdir -p ~/.config/pcmanfm-qt/default
 cp -Rp ~/Sparky_E/.config/pcmanfm-qt/default/settings.conf ~/.config/pcmanfm-qt/default/
 cp -Rp ~/Sparky_E/Music ~/
 
-sudo sed -i 's!system-file-manager!/usr/share/icons/oxygen/base/64x64/apps/system-file-manager.png!' /home/peja/.local/share/applications/pcmanfm-qt.desktop
+cp -Rp ~/Sparky_E/.local ~/
 
 cp -Rp ~/Sparky_E/.e ~/
 cp -Rp ~/Sparky_E/.elementary ~/
