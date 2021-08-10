@@ -45,8 +45,10 @@ sudo cp ~/Sparky_E/ncmpcpp_48x48.png /usr/share/icons
 #sudo chmod 777 /usr/share/icons/ncmpcpp_48x48.png
 
 sudo cp -p --recursive /home/$(logname)/Sparky_E/scripts/wingrid* /usr/local/bin/
-mkdir ~/.config/wingrid
-cp -p ~/Sparky_E/wingrid.conf ~/.config/wingrid/
+sudo chmod a+x /usr/local/bin/wingrid*
+mkdir /home/$(logname)/.config/wingrid
+cp -p /home/$(logname)/Sparky_E/wingrid.conf /home/$(logname)/.config/wingrid/
+sudo chmod a+x /usr/local/bin/wingrid*
 
 # korekcija autorizacije za gdebi
 # sudo sed -i 's/<allow_active>auth_admin/<allow_active>yes/' /usr/share/polkit-1/actions/com.ubuntu.pkexec.gdebi-gtk.policy
