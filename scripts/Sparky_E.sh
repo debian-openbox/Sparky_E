@@ -21,6 +21,7 @@ echo "sleep 8 && /usr/bin/conky-session &" >> ~/.config/autostart.sh
 echo "package-update-indicator &" >> ~/.config/autostart.sh
 echo "compton -cC -i 0.85 -e 0.85 -m 0.9 -r 4 -l -4 -t -4 &" >> ~/.config/autostart.sh
 echo "urxvtd -q &" >> ~/.config/autostart.sh
+sudo chmod a+x /home/$(logname)/.config/autostart.sh
 
 cp -Rp ~/Sparky_E/.config/gtk-3.0 ~/.config
 cp -Rp ~/Sparky_E/.config/geany ~/.config
