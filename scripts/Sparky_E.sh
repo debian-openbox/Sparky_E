@@ -84,7 +84,8 @@ sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ncmpcpp.de
 sudo echo "Icon=/usr/share/icons/ncmpcpp_48x48.png" >> /usr/share/applications/ncmpcpp.desktop
 
 ## screeny
-cp -p ~/Sparky_E/scripts/screeny ~/.scripts
+sudo cp -p ~/Sparky_E/scripts/screeny /usr/local/bin/
+sudo chmod a+x /usr/local/bin/screeny
 
 ## script for reinstall youtube-dl
 cp -p ~/Sparky_E/scripts/reinstall_youtube-dl.sh ~/.scripts
