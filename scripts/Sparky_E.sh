@@ -33,6 +33,7 @@ cp -Rp ~/Sparky_E/.config/terminator/config ~/.config/terminator/
 mkdir -p ~/.config/pcmanfm-qt/default
 cp -Rp ~/Sparky_E/.config/pcmanfm-qt/default/settings.conf ~/.config/pcmanfm-qt/default/
 cp -Rp ~/Sparky_E/Music ~/
+cp -Rp ~/Sparky_E/Pictures ~/
 
 cp -Rp ~/Sparky_E/.local ~/
 
@@ -168,7 +169,7 @@ sudo ./install.sh
 cd ~/Sparky_E/scripts/install_vim/
 sudo ./install.sh
 
-#sudo chown -R $(logname):$(logname) /home/$(logname)/
-#find /home/$(logname) -name '.*' | xargs sudo chown $(logname):$(logname)
-#find /home/$(logname) -type f | xargs sudo chmod 700
+sudo chown -R $(logname):$(logname) /home/$(logname)/
+find /home/$(logname) -name '.*' | xargs sudo chown $(logname):$(logname)
+find /home/$(logname) -type f | xargs sudo chmod 700
 
