@@ -14,7 +14,7 @@ find ~/Sparky_E -type f -exec chmod 755 {} \;
 
 sudo apt-get update
 
-sudo apt install -y  mpd ncmpcpp geany terminator rxvt-unicode lxappearance nmap net-tools mpv vlc htop firefox-esr gnome-disk-utility python3-pip fonts-ubuntu fonts-ubuntu-console suckless-tools sxiv xdotool git wmctrl numlockx arc-theme oxygen-icon-theme psmisc flameshot scrot qt5-style-plugins libglu1-mesa ttf-mscorefonts-installer && sudo apt install -y qbittorrent --no-install-recommends && sudo apt install -y pcmanfm-qt --no-install-recommends
+sudo apt install -y  mpd ncmpcpp geany terminator rxvt-unicode lxappearance gdebi nmap net-tools mpv vlc htop firefox-esr gnome-disk-utility python3-pip fonts-ubuntu fonts-ubuntu-console suckless-tools sxiv xdotool git wmctrl numlockx arc-theme oxygen-icon-theme psmisc flameshot scrot qt5-style-plugins libglu1-mesa ttf-mscorefonts-installer && sudo apt install -y qbittorrent --no-install-recommends && sudo apt install -y pcmanfm-qt --no-install-recommends
 
 # mkdir ~/.config/
 echo "sleep 8 && /usr/bin/conky-session &" >> ~/.config/autostart.sh
