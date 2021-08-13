@@ -161,7 +161,7 @@ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emula
 sudo update-alternatives --set x-terminal-emulator /usr/bin/terminator
 
 # replace thunar with pcmanfm-qt
-sed -i '/thunar --daemon &/c\pcmanfm --desktop &' ~/.config/openE/autostart.sh
+sed -i '/thunar --daemon &/c\pcmanfm --desktop &' ~/.config/openbox/autostart.sh
 
 cd ~/Sparky_E/scripts/openbox_conky
 sudo ./install.sh
