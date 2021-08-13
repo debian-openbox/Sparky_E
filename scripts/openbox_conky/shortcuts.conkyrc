@@ -82,5 +82,6 @@ Win + Esc${alignr}Kill window
 Win + l${alignr}Lock Screen
 Win + x${alignr}Logout
 Ctrl + Alt + Backspace${alignr}Kill X
+Ctrl + Alt + x${alignr}Close window
 
 ]];
