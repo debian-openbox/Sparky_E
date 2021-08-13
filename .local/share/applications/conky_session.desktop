@@ -1,0 +1,19 @@
+[Desktop Entry]
+Hidden=false
+Exec=/usr/bin/conky-session
+Icon=
+Type=Application
+NoDisplay=false
+Version=1.0
+StartupNotify=false
+StartupWMClass=
+GenericName[en_US]=
+Comment=
+DBusActivatable=false
+Terminal=false
+Name=conky-session
+GenericName=
+Icon[en_US]=
+TryExec=/usr/bin/conky-session
+Name[en_US]=conky-session
+Comment[en_US]=
