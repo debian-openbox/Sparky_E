@@ -163,7 +163,7 @@ sudo update-alternatives --set x-terminal-emulator /usr/bin/terminator
 # replace thunar with pcmanfm-qt
 sed -i '/thunar --daemon &/c\pcmanfm --desktop &' ~/.config/openE/autostart.sh
 
-cd ~/Sparky_E/scripts/openE_conky
+cd ~/Sparky_E/scripts/openbox_conky
 sudo ./install.sh
 
 cd ~/Sparky_E/scripts/install_vim/
